@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/danielmolnar/companion-app#readme",
   "dependencies": {
+    "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4"
   }
 }
