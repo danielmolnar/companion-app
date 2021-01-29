@@ -28,6 +28,32 @@ button {
   border: none;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/background_shape_1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  margin-bottom: 2px;
+}
+
+header p {
+  margin-top: 0px;
+}
+
+
 footer {
   position: fixed;
   left: 0;
