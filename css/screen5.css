@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 89px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.rate {
+  background: var(--orange1);
+  color: white;
+  font-size: 16px;
+  width: 200px;
+  height: 48px;
+}
+
+.rate img {
+  height: 12.67px;
+  width: 13.33px;
+}
+
+.journal {
+  margin: 020px 30px 0 30px;
+  padding: 20px;
+  border-radius: 6px;
+}

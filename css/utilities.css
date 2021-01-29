@@ -56,3 +56,7 @@
   line-height: 16px;
   color: rgb(117, 137, 162);
 }
+
+.bo-r {
+  border-radius: 5px;
+}
