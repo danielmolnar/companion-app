@@ -6,3 +6,35 @@ body {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: auto;
+  padding: 0.6rem 1rem;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.68);
+}
+
+.navigation img{
+  max-height: 20px;
+}
+
+.navigation img {
+  opacity: 60%;
+}
+
+img.navi_active {
+  opacity: 100%;
+}
+
