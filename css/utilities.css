@@ -1,0 +1,58 @@
+.sh-dark {
+  box-shadow: 0 2px 11px rgba(25, 50, 81, 0.2);
+}
+
+.sh-orange {
+  box-shadow: 0 4px 10px rgba(255, 90, 54, 0.4);
+}
+
+.bo-dark {
+  border: inside 1px rgb(117, 137, 162);
+}
+
+.bo-light {
+  border: inside 1px rgb(224, 228, 232);
+}
+
+.bold-16 {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(25, 50, 81);
+  line-height: 1.125;
+}
+
+.sebo-16-dark {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: rgb(25, 50, 81);
+}
+
+.sebo-16-light {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: rgb(117, 137, 162);
+}
+
+.sebo-14-dark-up {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(25, 50, 81);
+  text-transform: uppercase;
+}
+
+.sebo-14-dark {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(25, 50, 81);
+}
+
+.reg {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(117, 137, 162);
+}
