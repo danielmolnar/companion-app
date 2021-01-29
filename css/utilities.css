@@ -60,3 +60,7 @@
 .bo-r {
   border-radius: 5px;
 }
+
+.rotate {
+  transform: rotate(180deg);
+}
