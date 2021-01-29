@@ -1,0 +1,49 @@
+body {
+    width: 375px;
+    height: 856px;
+    background: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pair {
+    text-align: center;
+    width: 315px;
+    position: relative;
+}
+
+.pair div {
+    border: 1px solid #E0E4E8; 
+    width: 315px;
+    height: 58px;
+    color: #7589A2;
+    align-items: center;
+    xfont-family: 'Open Sans' sans-serif;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pair div span {
+    width: 125px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #7589A2;
+}
+
+.plus {
+    width: 20.33px;
+    height: 20.33px;
+    color: #193251;
+    position: absolute;
+    top: 48px;
+    left: 147.5px;
+}
