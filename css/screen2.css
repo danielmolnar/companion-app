@@ -47,3 +47,11 @@ main {
     top: 48px;
     left: 147.5px;
 }
+
+.pair__headline {
+    text-align: left;
+    color: #193251;
+    width: 50px;
+    height: 16px;
+    font-weight: 600px;
+}
