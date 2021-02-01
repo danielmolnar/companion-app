@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+main {
+  /* text-align: center; */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +30,7 @@ button {
   box-shadow: 0 4px 10px rgba(255, 90, 54, 0.4);
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 header {
@@ -73,7 +78,7 @@ footer {
   z-index: 120;
 }
 
-.navigation img{
+.navigation img {
   max-height: 20px;
 }
 
@@ -84,4 +89,3 @@ footer {
 img.navi_active {
   opacity: 100%;
 }
-

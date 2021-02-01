@@ -1,25 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #193251;
-  font-weight: 600;
-
-  text-align: left;
-}
-
-body {
-  margin: 0;
-}
-
-.energy-level-title {
-  margin-top: 10px;
-}
-
 /* ---- UHRZEIT --- */
 .flexbox {
   display: flex;
@@ -242,7 +220,7 @@ body {
 }
 
 /* von Calvin - eigentlich base.css! */
-
+/* 
 footer {
   position: fixed;
   left: 0;
@@ -304,12 +282,13 @@ header {
   background-image: url("../assets/background_shape_1.svg");
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-header h1 {
+/* header h1 {
   margin-bottom: 2px;
 }
 
 header p {
   margin-top: 0px;
 }
+ */

@@ -20,8 +20,9 @@
 .stars2,
 .comprehension {
   display: flex;
-  justify-content: space-around;
-  width: 315px;
+  justify-content: flex-start;
+  gap: 6px;
+  align-items: center;
 }
 
 textarea {
