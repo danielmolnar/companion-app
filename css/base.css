@@ -36,7 +36,7 @@ header {
   justify-content: center;
   padding: 20px;
   position: fixed;
-  z-index: 10;
+  z-index: 110;
   top: 0;
   left: 0;
   right: 0;
@@ -52,7 +52,6 @@ header h1 {
 header p {
   margin-top: 0px;
 }
-
 
 footer {
   position: fixed;
@@ -71,6 +70,7 @@ footer {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.68);
+  z-index: 120;
 }
 
 .navigation img{
