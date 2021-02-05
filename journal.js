@@ -15,7 +15,7 @@ const star3 = document.getElementById("Stern3");
 const star4 = document.getElementById("Stern4");
 const star5 = document.getElementById("Stern5");
 
-var state = 0;
+let state = 0;
 
 star1.addEventListener("click", () => {
   if (state == 0) {
@@ -48,23 +48,23 @@ star2.addEventListener("click", () => {
   }
 });
 
-for (i = 0; i < 6; i++)
-  star3.addEventListener("click", () => {
-    if (state == 0) {
-      star1.classList.add("star__full");
-      star2.classList.add("star__full");
-      star3.classList.add("star__full");
+/* for (i = 0; i < 6; i++) */
+star3.addEventListener("click", () => {
+  if (state == 0) {
+    star1.classList.add("star__full");
+    star2.classList.add("star__full");
+    star3.classList.add("star__full");
 
-      state = 1;
-    } else {
-      star1.classList.remove("star__full");
-      star2.classList.remove("star__full");
-      star3.classList.remove("star__full");
-      star4.classList.remove("star__full");
-      star5.classList.remove("star__full");
-      state = 0;
-    }
-  });
+    state = 1;
+  } else {
+    star1.classList.remove("star__full");
+    star2.classList.remove("star__full");
+    star3.classList.remove("star__full");
+    star4.classList.remove("star__full");
+    star5.classList.remove("star__full");
+    state = 0;
+  }
+});
 
 star4.addEventListener("click", () => {
   if (state == 0) {
