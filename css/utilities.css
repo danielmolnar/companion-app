@@ -51,11 +51,13 @@
 }
 
 .reg {
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: rgb(117, 137, 162);
   text-align: left;
+  
 }
 
 .bo-r {
