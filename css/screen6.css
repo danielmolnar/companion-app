@@ -15,6 +15,7 @@
 .stars2 img {
   height: 35px;
   width: auto;
+  
 }
 
 .stars2,
@@ -24,6 +25,42 @@
   gap: 6px;
   align-items: center;
 }
+
+.star__empty {
+  background-image: url('../assets/Star Copy 8@2x.png');
+  background-size:cover;
+  height: 40px;
+  width: 40px;
+
+}
+
+.star__full {
+  background-image: url('../assets/Star.png');
+  background-size:cover;
+  height: 40px;
+  width: 40px;
+}
+
+#Stern1 {
+
+}
+
+#Stern2 {
+
+}
+
+#Stern3 {
+
+}
+
+#Stern4 {
+
+}
+
+#Stern5 {
+
+}
+
 
 textarea {
   width: 315px;
