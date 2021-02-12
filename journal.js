@@ -13,9 +13,9 @@ function fillStars(star, i) {
       starArrowItem.classList.remove('star__full')
     })
 
-    star.classList.add('star__full')
+    //star.classList.add('star__full')
 
-    untilStar = starsArr.slice(0, i)
+    untilStar = starsArr.slice(0, i + 1)
 
     untilStar.forEach((untilStarItem) => {
       untilStarItem.classList.add('star__full')
