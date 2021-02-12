@@ -1,4 +1,22 @@
-const wholeTeam = [
+
+fetch('https://muc-2020-w1-student-api.vercel.app/api/buddies')
+  .then((res) => res.json())
+  .then((buddies) => buddies.forEach(renderTeam))
+
+
+const container = document.querySelector(".main-container");
+
+function renderTeam(buddy) {
+  const team = document.createElement('section')
+  team.classList.add('team')
+  container.appendChild(team)
+  team.innerHTML = `<div class="team__member"> ${buddy[0]} </div>
+                           <img src="/Plus@2x.16876357.png" class='plus'>
+                           <div class="team__member"> ${buddy[1]} </div>`
+}
+
+
+/* const wholeTeam = [
   "Andre T.",
   "Andre W.",
   "Anita",
@@ -22,3 +40,4 @@ for (i = 0; i < wholeTeam.length; i = i + 2) {
                            <div class="team__member"> ${wholeTeam[i + 1]
     } </div>`;
 }
+ */

@@ -40,3 +40,14 @@
   height: 22px;
   width: auto;
 }
+
+.star {
+  background: url(../img/Star.png);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+}
+
+#stars {
+  display: flex;
+}
