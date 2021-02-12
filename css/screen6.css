@@ -15,7 +15,6 @@
 .stars2 img {
   height: 35px;
   width: auto;
-  
 }
 
 .stars2,
@@ -28,44 +27,37 @@
 
 .star__empty {
   background-image: url('../assets/Star Copy 8@2x.png');
-  background-size:cover;
-  height: 40px;
-  width: 40px;
-
+  background-size: cover;
+  height: 35px;
+  width: 35px;
 }
 
 .star__full {
   background-image: url('../assets/Star.png');
-  background-size:cover;
-  height: 40px;
-  width: 40px;
+  background-size: cover;
+  height: 35px;
+  width: 35px;
 }
 
-#Stern1 {
-
+.comprehension__empty {
+  background-image: url('../assets/Rectangle\ Copy\ 13@2x.png');
+  background-size: cover;
+  height: 26px;
+  width: 26px;
 }
 
-#Stern2 {
-
+.comprehension__full {
+  background-image: url('../assets/Rectangle\ Copy\ 12@2x.png');
+  background-size: cover;
+  height: 26px;
+  width: 26px;
 }
-
-#Stern3 {
-
-}
-
-#Stern4 {
-
-}
-
-#Stern5 {
-
-}
-
 
 textarea {
   width: 315px;
   border: inside 1px rgb(224, 228, 232);
 }
+
 .btn {
   display: flex;
   justify-content: space-evenly;

@@ -16,10 +16,6 @@
   box-sizing: border-box;
 }
 
-main {
-  /* text-align: center; */
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -80,9 +76,6 @@ footer {
 
 .navigation img {
   max-height: 20px;
-}
-
-.navigation img {
   opacity: 60%;
 }
 
