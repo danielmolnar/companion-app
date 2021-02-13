@@ -39,7 +39,7 @@
   width: 35px;
 }
 
-.comprehension__empty {
+/* .comprehension__empty {
   background-image: url('../assets/Rectangle\ Copy\ 13@2x.png');
   background-size: cover;
   height: 26px;
@@ -51,7 +51,7 @@
   background-size: cover;
   height: 26px;
   width: 26px;
-}
+} */
 
 textarea {
   width: 315px;
