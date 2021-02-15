@@ -26,32 +26,34 @@
 }
 
 .star__empty {
-  background-image: url('../assets/Star Copy 8@2x.png');
+  background-image: url("../assets/StarEmpty.png");
   background-size: cover;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
+  margin: 0 20px 0 0;
 }
 
 .star__full {
-  background-image: url('../assets/Star.png');
+  background-image: url("../assets/Star.png");
   background-size: cover;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
+  margin: 0 20px 0 0;
 }
 
-/* .comprehension__empty {
-  background-image: url('../assets/Rectangle\ Copy\ 13@2x.png');
+.comp__empty {
+  background-image: url("../assets/RectangleEmpty.png");
   background-size: cover;
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
 }
 
-.comprehension__full {
-  background-image: url('../assets/Rectangle\ Copy\ 12@2x.png');
+.comp__full {
+  background-image: url("../assets/Rectangle.png");
   background-size: cover;
-  height: 26px;
-  width: 26px;
-} */
+  height: 20px;
+  width: 20px;
+}
 
 textarea {
   width: 315px;

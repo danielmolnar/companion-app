@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="new_journal.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journal</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="new_journal.js" defer></script>
-</head>
+  <body>
+    <header>
+      <h1 class="bold-16">JOURNAL</h1>
+    </header>
 
-<body>
-  <header>
-    <h1 class="bold-16">JOURNAL</h1>
-  </header>
-
-  <main class="container_left">
-    <p class="sebo-14-dark-up">TODAY, 12.07.2020</p>
-    <div class="new-entry__div">
-      <p class="sebo-14-dark">Rating:</p>
-      <div class="stars2">
-        <div ID="Stern1" class="star star__empty"></div>
-        <div ID="Stern2" class="star star__empty"></div>
-        <div ID="Stern3" class="star star__empty"></div>
-        <div ID="Stern4" class="star star__empty"></div>
-        <div ID="Stern5" class="star star__empty"></div>
+    <main class="container_left">
+      <p class="sebo-14-dark-up">TODAY, 12.07.2020</p>
+      <div class="new-entry__div">
+        <p class="sebo-14-dark">Rating:</p>
+        <div class="stars2">
+          <div id="Stern1" class="star star__empty"></div>
+          <div id="Stern2" class="star star__empty"></div>
+          <div id="Stern3" class="star star__empty"></div>
+          <div id="Stern4" class="star star__empty"></div>
+          <div id="Stern5" class="star star__empty"></div>
+        </div>
       </div>
-    </div>
-    <div class="new-entry__div">
-      <p class="sebo-14-dark">Comprehension:</p>
-      <div class="comprehension">
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
-        <div class="square comprehension__empty"></div>
+      <div class="new-entry__div">
+        <p class="sebo-14-dark">Comprehension:</p>
+        <div class="comprehension">
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+          <div class="square comp__empty"></div>
+        </div>
       </div>
-    </div>
-    <div class="new-entry__div">
-      <p class="sebo-14-dark">Motto:</p>
-      <textarea name="Motto" id="motto" cols="10" rows="3"> </textarea>
-    </div>
-    <div class="new-entry__div">
-      <p class="sebo-14-dark">Notes:</p>
-      <textarea name="Notes" id="notes" cols="20" rows="10"> </textarea>
-    </div>
-    <div class="btn">
-      <button class="sebo-16-dark">Cancel</button>
-      <button>Save ✔︎</button>
-    </div>
-  </main>
-  <footer>
-    <nav class="navigation">
-      <a href="index.html">
-        <img src="assets/DashboardIcon.svg" alt="DashboardIcon" />
-      </a>
-      <a href="buddy.html">
-        <img src="assets/BuddyIcon.svg" alt="Buddyicon" />
-      </a>
-      <a href="team.html">
-        <img src="assets/TeamIcon.svg" alt="Teamicon" />
-      </a>
-      <a href="energy.html">
-        <img src="assets/EnergyIcon.svg" alt="EnergyIcon" />
-      </a>
-      <a href="journal.html">
-        <img src="assets/JournalIcon.svg" class="navi_active" alt="JournalIcon" />
-      </a>
-    </nav>
-  </footer>
-</body>
-
+      <div class="new-entry__div">
+        <p class="sebo-14-dark">Motto:</p>
+        <textarea name="Motto" id="motto" cols="10" rows="3"> </textarea>
+      </div>
+      <div class="new-entry__div">
+        <p class="sebo-14-dark">Notes:</p>
+        <textarea name="Notes" id="notes" cols="20" rows="10"> </textarea>
+      </div>
+      <div class="btn">
+        <button class="sebo-16-dark">Cancel</button>
+        <button id="btn-save">Save ✔︎</button>
+      </div>
+    </main>
+    <footer>
+      <nav class="navigation">
+        <a href="index.html">
+          <img src="assets/DashboardIcon.svg" alt="DashboardIcon" />
+        </a>
+        <a href="buddy.html">
+          <img src="assets/BuddyIcon.svg" alt="Buddyicon" />
+        </a>
+        <a href="team.html">
+          <img src="assets/TeamIcon.svg" alt="Teamicon" />
+        </a>
+        <a href="energy.html">
+          <img src="assets/EnergyIcon.svg" alt="EnergyIcon" />
+        </a>
+        <a href="journal.html">
+          <img
+            src="assets/JournalIcon.svg"
+            class="navi_active"
+            alt="JournalIcon"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
 </html>

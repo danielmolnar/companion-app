@@ -2,24 +2,24 @@ fetch("https://muc-2020-w1-student-api.vercel.app/api/journals")
   .then((res) => res.json())
   .then((entries) => {
     entries.forEach(renderEntries);
-    entries.forEach(createStars);
   });
 
 const container = document.querySelector(".container");
 
-function renderEntries(entry, i) {
+function renderEntries(entry, index) {
   const card = document.createElement("div");
   card.classList.add("journal", "sh-dark");
   container.appendChild(card);
-  const id = entry.id;
+
   card.innerHTML = `   <p class="sebo-14-dark-up">Date</p>
         <div class="journal__div">
             <p class="reg">Rating:</p>
-            <div class="stars"></div>
+            <div id= "${index}-stars" class="stars">
+            </div>
         </div>
         <div class="journal__div">
           <p class="reg">Comprehension:</p>
-          <div class="comprehension">
+          <div id="${index}-comp" class="comprehension">
           </div>
         </div>
          
@@ -33,59 +33,82 @@ function renderEntries(entry, i) {
         </p>
     </div>`;
 
-  // paintStars(entry.rating, entry.id);
+  // Create Stars
 
-  //paintStars(); */
-
-  return entry;
-}
-
-function createStars() {
-  const starsContainer = document.getElementsByClassName("stars");
+  const starsContainer = document.getElementById(`${index}-stars`);
   const star1 = document.createElement("div");
   const star2 = document.createElement("div");
   const star3 = document.createElement("div");
   const star4 = document.createElement("div");
   const star5 = document.createElement("div");
-  starsContainer.appendChild(star1, star2, star3, star4, star5);
+  starsContainer.append(star1, star2, star3, star4, star5);
 
-  const stars = [star1, star2, star3, star4, star5];
+  // Fill Stars
 
-  stars.map((star) => star.classList.add("star__empty"));
+  const starsArr = [star1, star2, star3, star4, star5];
+  //const starsArr = Array.from(stars);
 
-  //return stars;
-}
-
-function paintStars(number, stars) {
-  const starsArr = Array.from(stars);
-
-  // starsArr = [star1, star2, star3, star4, star5]
-
-  const untilStar = starsArr.slice(0, number + 1);
-
+  const untilStar = starsArr.slice(0, entry.rating);
   untilStar.forEach((untilStarItem) => {
     untilStarItem.classList.add("star__full");
-    untilStarItem.classList.remove("star__empty");
   });
-}
 
-/* const stars = document.querySelectorAll(.star__empty)
-const starsArr = Array.from(stars) */
-
-/* function createStars(number, entry) {
-  const id = entry.id;
-  const stars = document.querySelector(id);
-  const starsArr = Array.from(stars);
-
-  // starsArr = [star1, star2, star3, star4, star5]
-
-  const untilStar = starsArr.slice(0, number + 1);
-
-  console.log(untilStar);
-
-  untilStar.forEach((untilStarItem) => {
-    untilStarItem.classList.add("star__full");
-    untilStarItem.classList.remove("star__empty");
+  const fromStar = starsArr.slice(entry.rating);
+  fromStar.forEach((fromStarItem) => {
+    fromStarItem.classList.add("star__empty");
   });
+
+  // Create Comprehension
+
+  const compContainer = document.getElementById(`${index}-comp`);
+  const comp1 = document.createElement("div");
+  const comp2 = document.createElement("div");
+  const comp3 = document.createElement("div");
+  const comp4 = document.createElement("div");
+  const comp5 = document.createElement("div");
+  const comp6 = document.createElement("div");
+  const comp7 = document.createElement("div");
+  const comp8 = document.createElement("div");
+  const comp9 = document.createElement("div");
+  const comp10 = document.createElement("div");
+  compContainer.append(
+    comp1,
+    comp2,
+    comp3,
+    comp4,
+    comp5,
+    comp6,
+    comp7,
+    comp8,
+    comp9,
+    comp10
+  );
+
+  //Fill Comprehension
+
+  const comps = [
+    comp1,
+    comp2,
+    comp3,
+    comp4,
+    comp5,
+    comp6,
+    comp7,
+    comp8,
+    comp9,
+    comp10,
+  ];
+  const compArr = Array.from(comps);
+
+  const untilComp = compArr.slice(0, entry.comprehension);
+  untilComp.forEach((untilCompItem) => {
+    untilCompItem.classList.add("comp__full");
+  });
+
+  const fromComp = compArr.slice(entry.comprehension, 10);
+  fromComp.forEach((fromCompItem) => {
+    fromCompItem.classList.add("comp__empty");
+  });
+
+  return entry;
 }
- */
